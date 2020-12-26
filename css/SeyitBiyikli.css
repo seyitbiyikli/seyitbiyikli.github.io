@@ -1,0 +1,485 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing:border-box;
+}
+body {
+  background-color: #1c243a;
+  text-align: center;
+  color: white;
+  font-family:courier,arial,helvetica;
+}
+header{
+  width:100%;
+  height: 100px;
+  color:#fff;
+  position: fixed;
+  padding:7px;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.headerContainer{
+  width: 100%;
+ margin:auto;
+}
+header .headerContainer{
+  display:table;
+}
+/*menü*/
+.menuResponsive{
+
+  float: right;
+}
+.img1{
+  float: left;
+  margin-top: -20px;
+  margin-left:-7px;
+}
+
+#menu-bar{
+  display: none;
+}
+.duzenleBtn{
+  top: 0;
+}
+.textArea{
+  background:white;
+  width: 40%;
+  height:120%;
+}
+
+
+.input .duzenleBtn{
+  position: absolute;
+  top: 0;
+}
+
+textArea {
+    font-family: Helvetica;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    overflow: auto;
+    outline: none;
+    position: relative;
+}
+.calismalarimText{
+  padding-top: 10%;
+  width: 100%;
+  height: 100%;
+}
+.calismalarimText2{
+  padding-top: 10%;
+  width: 100%;
+  height: 100%;
+}
+.calismalarimText2 img{
+  width: 20%;
+}
+.calismalarimText2 p{
+  font-size:120%;
+}
+.calismalarimText2 p{
+  font-size:120%;
+}
+.calismalarimText img{
+  width: 20%;
+}
+.calismalarimText img{
+  width: 40%;
+}
+.calismalarimText p{
+  font-size:120%;
+}
+.hakkimdaTextArea {
+ position: relative;
+ display: inline-block;
+ padding: 30px 0;
+ width: 100%;
+ height: 70%;
+}
+
+
+textArea[readonly] {
+  background-color: white;
+  border: red;
+}
+
+
+
+
+header label{
+  font-size: 250%;
+  float:right;
+  cursor: pointer;
+}
+.hakkimdaText{
+  padding-top:5%;
+  text-align: center;
+}
+.menu{
+position: fixed;
+  width: 200px;
+  height: 500px;
+  right: 0;
+  top:60px;
+  background-color:#1c243a;
+  transform: translateX(1100%);
+  
+}
+.calismalarimMenu{
+  margin:0;
+  padding:0;
+  display: none;
+  overflow: hidden;
+  max-height: 0px;
+  transition: all 0.5s ease-out;
+  list-style: none;
+  -webkit-transition:  all 0.5s ease-out;
+}
+.menu a{
+  font-size:80%;
+  display: block;
+  color:#f7f3e6;
+  right: 0;
+  height: 10%;
+  text-decoration: none;
+  padding:15%;
+  border-bottom:1px solid #f7f3e6;
+
+}
+.li{
+  background-color: #000;
+}
+.a1{
+  color:#fff;
+  text-decoration: none;
+  font-size:100%;
+}
+.acilirCalisma:hover .calismalarimMenu{
+  display: block;
+  max-height: 1000px;
+}
+.menu .calismalarimMenu a{
+  background-color:#7e8784;
+}
+.menu .calismalarimMenu a:hover{
+background-color: rgba(26, 1, 46, 0.363);
+}
+.menu li:hover .calismalarimMenu{
+  max-height: 250px;
+  display: block;
+}
+.menu a:hover{
+  background:rgba(26, 1, 46, 0.363);
+}
+  #menu-bar:checked ~.menu{
+    transform:translateX(0%);
+    transition:all 0.5s;
+  }
+
+/*menü*/
+
+
+/*footer*/
+footer{
+ border-top: 2px solid #f7f3e6;
+  width: 100%;
+  background-color:#d76259;
+}
+.kisiBilgi{
+  display:flex;
+}
+.kisiBilgi .bolum{
+  flex-basis: 50%;
+  padding:1% 1%;
+  width: 33%;
+}
+.bolum .aciklama{
+  margin:1% 0 0 0;
+}
+.aciklama{
+  font-size:90%;
+}
+.orta .aciklama p{
+  text-align:center;
+}
+footer h2{
+  color:#1c243a;
+  font:normal 170% Cookie,cursive;
+  margin: 0;
+  font-weight:600;
+}
+footer h2 span{
+  color:#1c243a;
+}
+.copyright{
+  color:#fff;
+  text-decoration: none;
+}
+footer p.copyright{
+color:#fff;
+font-weight: 500;
+margin: 0;
+}
+.orta .aciklama .sosyalMedya{
+margin:3% 0 0 0;
+}
+.orta .aciklama .sosyalMedya a{
+  padding:0 1%;
+}
+.orta .aciklama .sosyalMedya a span{
+  line-height: 120%;
+  height: 30px;
+  width: 30px;
+  text-align:center;
+  color: #fff;
+  
+  font-size: 300%;
+  border-radius: 200%;
+  transition: 0.3s;
+}
+
+/*footer*/
+.a1{
+  color:#000;
+  font-size:100%;
+}
+/*ortaKısım*/
+.anasayfa{
+  background-color: transparent;
+  height: 150vh;
+  width: 80%;
+  margin-left: 10%;
+}
+.ortaKisim{
+width: 100%;
+height:100%;
+}
+.ortaKisim2{
+  width: 100%;
+  height:100%;
+  }
+.ortaKisim h3{
+  font:normal 300% Cookie,cursive;
+  color:#fff;
+}
+.ortaKisim .metin{
+  padding-top:20%;
+  vertical-align: middle;
+  text-align: center;
+}
+.ortaResim{
+  height: 100vh;
+  width: 100%;
+  background-image: url(1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+}
+.ortaResim2{
+  height: auto;
+  width: 100%;
+  background-image: url(1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.sliderDiv{
+  margin-top:3%;
+  width: 34%;
+  height: 30%;
+  margin-left:6%;
+}
+.videolar{
+  padding: 0;
+  margin-top:-31%;
+  margin-right: 7%;
+  width: 33%;
+  float:right;
+}
+.video{
+  width: 100%;
+  height: 400px;
+}
+.calismalarimYazi{
+  margin-left:2%;
+}
+.teknolojiHaberleri{
+  margin-right: 3%;
+  width:40%; 
+  height:300px;
+  float:right;
+}
+
+.iframe1{
+  width: 80%;
+  height: 90%;
+}
+.duyurular{
+  
+  margin-left:3%;
+  width: 40%;
+  height: 400px;
+  background-color:  #1c243a;
+}
+/*ortaKısım*/
+
+
+/*degiskenYazi*/
+.duyurularIc{
+  margin-left: 10%;
+  width:80%;
+  height: 270px;
+  background-color: #fff;
+}
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+
+
+
+.container p {
+  font-size: 3rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+}
+.container p span.typed-text {
+  font:normal 100% Cookie,cursive;
+  font-weight: normal;
+  color: #fff;
+}
+.container p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 1px;
+  animation: blink 1s infinite;
+}
+.container p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
+}
+
+@media screen and (max-width:600px)
+{
+  .container p span.typed-text
+  {
+    font-size:50%;
+  }
+  .a1{
+    font-size:50%;
+  }
+  .menu a{
+    font-size:50%;
+  }
+  .metin{
+    font-size:50%;
+  }
+  .typed-text{
+    font-size:50%;
+  }
+  .calismalarimYazi{
+    font-size: 50%;
+  }
+  .text{
+    font-size:60%;
+  }
+  .copyright{
+    color:#fff;
+    font-size:80%;
+  }
+  .footerSize{
+    font-size:80%;
+  }
+  .hakkimdaSize{
+    font-size:80%;
+  }
+  .ikon{
+    font-size:70%;
+  }
+}
+/*degiskenYazi*/
+
+
+ul {list-style: none;}
+
+
+
+
+.slider{
+  position: relative;
+  width: 95%;
+  height: 95%;
+  overflow: hidden;
+  margin-left:3%;
+
+}
+.resimler{
+  display: flex;
+  width: 100%;
+  height: 80%;
+}
+.resimler img{
+  width: 100%;
+}
+.resimler r{
+  height: 100%;
+  width: 100%;
+  transition: all 0.15s ease;
+}
+.resimler input{
+  display: none;
+}
+.noktalar{
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+.noktalar label{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border:solid#fff 1px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  margin:3px;
+}
+.noktalar label:hover{
+  color:aqua;
+  background-color: aqua;
+}
+#resim1:checked ~ .r1{
+  margin-left: 0%;
+}
+#resim2:checked ~ .r2{
+  margin-left: -100%;
+}
+#resim3:checked ~ .r3{
+  margin-left: -200%;
+}
+
+.iletisimDisKisim{
+  background-color: transparent;
+  width: 50%;
+  height: 83vh;
+  margin-left: 25%;
+  padding-top:10%;
+}
+.iletisimKismi{
+  width: 100%;
+}
+.iletisimİcKisim{
+  width: 100%;
+}
