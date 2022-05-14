@@ -1,0 +1,477 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+  }
+  body {
+    background-color: white;
+    text-align: center;
+    color: white;
+    font-family:"Comic Sans MS", "Comic Sans", cursive;
+  }
+
+  /*header*/
+
+  header{
+      z-index: 999;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background:transparent;
+      box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
+      padding: 0 100px;
+      transition: 0.6s;
+  }
+  header .headerLogo{
+      width: 15%;
+      height: 15%;
+  }
+  .sticky{
+      background: #000;
+  }
+  header .navigation{
+      position: relative;
+      line-height: 5px;
+  }
+  header .navigation .menu{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      user-select: none;
+  }
+  .menu-item >a{
+      color: #fff;
+      font-size: 100%;
+      text-decoration: none;
+      margin: 20px;
+  }
+  .menu-item > a:hover{
+      color:rgb(175, 24, 24) ;
+      transition: 0.3s;
+  }
+  /*header*/
+
+
+  /*ortakisim*/
+.ortaKisim{
+    width: 100%;
+    height:100%;
+    }
+    .ortaKisim2{
+      width: 100%;
+      height:100%;
+      }
+    .ortaKisim h3{
+      font:normal 300% Cookie,cursive;
+      color:#fff;
+    }
+    .ortaKisim .metin{
+      padding-top:20%;
+      vertical-align: middle;
+      text-align: center;
+      font-size: 200%;
+    }
+    .ortaResim{
+      height: 100vh;
+      width: 100%;
+      background-image: url(1.jpg);
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+    
+    }
+    /*ortakisim*/
+
+    /*hakkimda*/
+
+    .hakkimda{
+        padding-top: 5%;
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+        height: auto;
+    }
+    .hakkimdaIcDiv{
+        
+        display: inline-block;
+    }
+    .hakkimdaBaslik h3{
+        color: #000;
+        padding: 3%;
+    }
+    .hakkimdaResim{
+        float: left;
+        width: 40%;
+        height: auto;
+        margin-left: 10%;
+        padding-top: 4%;
+    }
+    .hakkimdaResim img{
+        border-radius: 10%;
+        box-shadow: 0 0 50px rgb(175, 24, 24);
+    }
+   .hrDesign{  
+    width: 20%;
+    margin-top: -2%;
+    border-style: inset;   
+    border-width: 1px;
+    border-color: rgb(175,24,24);
+   }
+   .hrDesign2{  
+    width: 20%;
+    border-style: inset;   
+    border-width: 1px;
+    border-color: rgb(175,24,24);
+   }
+    .hakkimdaAciklama{
+        color:#000;
+        width: 70%;
+        margin: auto;
+        text-align: start;
+        justify-content:space-between;
+        padding-top: 13%;
+    }
+
+    .profilResim{
+        width: 70%;
+        height: 60%;
+
+    }
+    .hakkimda h3{
+        padding-top: 2%;
+        font-size: 180%;
+    }
+    .hakkimda p{
+        font-size: 120%;
+    }
+    .buton{
+        margin-top: 5%;
+    }
+    .butonA{
+        position: relative;
+        background: #fff;
+        color: #000;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1.5em;
+        letter-spacing: 0.1em;
+        font-weight: 400%;
+        padding: 10px 30px;
+        transition: 0.5s;
+        border: 1px solid #000;
+        border-radius: 5%;
+    }
+    .butonA:hover{
+        background:rgb(175,24,24);
+        color:rgb(175,24,24) ;
+        letter-spacing: 0.25em;
+        box-shadow: 0 0 35px rgb(175,24,24);
+    }
+    .butonA:before{
+        content: '';
+        position: absolute;
+        inset: 2px;
+        background: #fff;
+    }
+    .butonA span{
+        position: relative;
+        z-index: 1;
+
+
+    }
+  /*hakkimda*/
+
+    
+
+
+
+
+
+    
+    /*calismalarim*/
+    .calismalarim{
+        background: white;
+        width: 70%;
+        margin-left: 15%;
+        margin-right:15%;
+        height: auto;
+        margin-top: 6%;
+        padding-top: 0.2%;
+    }
+    .calismalarimh2{
+        padding-top: 2%;
+    }
+    .gruplandirma{
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        padding-top: -20%;
+    }
+    .gruplandirma .gruplandirmaSatir{
+        width: 70%;
+        padding-top: -20%;
+        margin-left: 5%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+        grid-gap: 4px;
+    }
+    
+    .gruplandirma .gruplandirmaSatir .kart{
+        width: 80%;
+        margin-top: 2rem;
+        transition: .5s;
+        background: green;
+    }
+    .gruplandirma .gruplandirmaSatir .kart .ikon{
+        width: 100%;
+        height: 130px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgb(175, 24, 24);
+        border:1px solid #000;
+    }
+    .gruplandirma .gruplandirmaSatir .kart .ikon i{
+        color: white;
+        font-size: 50px;
+    }
+    .gruplandirma .gruplandirmaSatir .kart .kart-body{
+        width: 100%;
+        height: 210px;
+        color: black;
+        background: white;
+        text-align: center;
+        padding: .5rem;
+        border:1px solid #000;
+    }
+    .kart .kart-body h3{
+        margin-top: 1rem;
+        color: rgb(175, 24, 24);
+    }
+    .kart .kart-body p{
+        opacity: .6;
+        font-size: 14px;
+        margin-top: .5rem;
+    }
+    
+    .gruplandirma .gruplandirmaSatir:hover .kart{
+        transform: scale(0.7);
+        filter: blur(5px);
+    }
+    .gruplandirma .gruplandirmaSatir .kart:hover{
+        transform: scale(1.2);
+        filter: blur(0px);
+        box-shadow: 0 0 50px rgb(175,24,24);
+    }
+    /*calismalarim*/
+
+    /*iletisim*/
+
+    .iletisim{
+        background: white;
+        width: 70%;
+        margin-left: 15%;
+        margin-right:15%;
+        padding: 1%;
+        margin-top: 5%;
+        height: auto;
+        color: #000;
+    }
+    .iletisimYazi{
+        margin-top: 10%;
+    }
+    .iletisim-h2{
+        font-size: 140%;
+    }
+    label{
+        color: #000;
+    }
+    .iletisimKismi{
+        display: flex;
+        justify-content: center;
+        box-shadow: 0 0 20px rgb(175,24,24);
+    }
+    .iletisimKismi .iletisimForm{
+        width: 200%;
+        height: auto;
+        background: white;
+        display: flex;
+        flex-direction: row;
+        color: #000;
+        padding-bottom: 1rem;
+    }
+    .iletisimForm h2{
+        margin-top: 3%;
+        letter-spacing: 2%;
+    }
+    .iletisimForm form{
+        width: 80%;
+        margin-top: 7%;
+    }
+    .iletisimForm label{
+        margin-top: 5%;
+        display: block;
+        float: left;
+    }
+    .iletisimForm input,textarea{
+        display: block;
+        width: 100%;
+        outline: none;
+        margin-top: .5%;
+        height: 10%;
+        border: none;
+        padding: 0 .5%;
+        font-size: 150%;
+        color:#000;
+        border-bottom: 2px solid #000;
+        background: transparent;
+    }
+    /*iletisim*/
+
+
+    /*footer*/
+
+    footer{
+        width: 100%;
+        position: relative;
+        bottom: 0;
+        background: #000;
+        color: #fff;
+        padding: 60px 0 30px;
+        font-size: 13px;
+        line-height: 20px;
+        margin-top: 10%;
+    }
+    .satir{
+        width: 85%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .sutun{
+        flex-basis: 25%;
+        padding: 10px;
+    }
+    .sutun:nth-child(2), .sutun:nth-child(3){
+        flex-basis: 15%;
+    }
+    .sutun .h3Dizayn{
+        width: fit-content;
+        margin-bottom: 10px;
+        position: relative;
+    }
+    .footerLogo{
+        width: 80px;
+        margin-bottom: 30px;
+    }
+    ul li a{
+        float: left;
+        text-decoration: none;
+        color: #fff;
+    }
+    .formFooter{
+        padding-bottom: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 50px;
+    }
+    .ptext{
+        margin-right: 43px;
+    }
+    .formFooter .far{
+        font-size: 18px;
+        margin-right: 10px;
+    }
+    .formFooter .input{
+        width: 100%;
+        background: transparent;
+        color:#ccc;
+        border: 0;
+        outline: none;
+    }
+    .formFooter button{
+        background: #fff;
+        border: 0;
+        outline: none;
+        cursor: pointer;
+    }
+    .formFooter button .fas{
+        font-size: 16px;
+        color: #ccc;
+    }
+    .sosyal-ikon .fab{
+        width: 40px;
+        height: 40px;
+        margin-top: 10px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 40px;
+        font-size: 20px;
+        color:rgb(175, 24, 24);
+        background: #ccc;
+        margin-right: 15px;
+        cursor: pointer;
+    }
+    hr{
+        width: 90%;
+        border: 0;
+        border-bottom: 1px solid #ccc;
+        margin: 20px auto;
+    }
+    .copyright{
+        text-align: center;
+    }
+    /*footer*/
+
+
+    /*degiskenyazi*/
+
+    @import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+
+
+
+.container p {
+  font-size: 3rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+}
+.container p span.typed-text {
+  font:normal 100% Cookie,cursive;
+  font-weight: normal;
+  color: #fff;
+}
+.container p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 1px;
+  animation: blink 1s infinite;
+}
+.container p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
+}
+
+
+
+
+
